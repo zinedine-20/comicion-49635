@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: roboto;
+}
+
+.navbar {
+  min-height: 100px;
+  .navbar-brand {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+    img{
+        max-width: 100px;
+    }
+    span {
+      color: rgb(12, 156, 156);
+      
+    }
+    }
+    .container-fluid {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .navbar-collapse {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-basis: 54%;
+      flex-grow: 0;
+    }
+    .navbar-nav {
+      li {
+        a {
+          color: rgb(12, 156, 156) !important;
+        }
+      }
+    }
+ 
+}
