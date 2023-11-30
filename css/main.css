@@ -5,20 +5,21 @@
 .gridPage {
   display: grid;
   grid-template-rows: 100px 1fr 100px;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, 1fr);
   height: 100vh;
+  width: 100vw;
 }
 
 .header {
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 .principal {
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 .footer {
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 * {
@@ -66,6 +67,7 @@
   margin-top: 10px;
 }
 .principal .asistenciaLegal {
+  width: 100%;
   height: 500px;
   background: url("../img/img_AsesoriaLegal.avif");
   background-size: cover;
@@ -105,7 +107,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 10px black;
-  background-color: aqua;
+  background-color: rgb(5, 136, 136);
 }
 .principal .nuestrosServicios .nuestrosServicios__card .card__img {
   width: 100%;
@@ -119,7 +121,72 @@
 }
 .principal .nuestrosServicios .nuestrosServicios__card .card__title h3 {
   font-size: 12px;
+  font-weight: bold;
   padding-top: 10px;
+  color: white;
+}
+.principal .estadisticas {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.principal .estadisticas__subtitle {
+  color: white;
+  background-color: #0c9c9c;
+  height: 80px;
+  line-height: 80px;
+}
+.principal .estadisticas__grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 0.1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.principal .estadisticas__grid .contenedor img {
+  width: 100%;
+  object-fit: cover;
+}
+.principal .nosotros {
+  padding-top: 15px;
+}
+.principal .nosotros__title {
+  color: white;
+  background-color: #0c9c9c;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+}
+.principal .nosotros__flex {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.principal .nosotros__flex .contenedor {
+  box-shadow: 0px 0px 10px black;
+}
+.principal .nosotros__flex .contenedor .nosotros__img {
+  max-width: 500px;
+}
+.principal .nosotros__flex .contenedor .nosotros__img img {
+  width: 100%;
+  object-fit: cover;
+}
+.principal .nosotros__flex .contenedor .nosotros__text {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+.principal .nosotros__flex .contenedor .nosotros__text a {
+  background-color: #0c9c9c;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .footer__flex {
