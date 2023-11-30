@@ -1,21 +1,21 @@
 .gridPage{
     display: grid;
-    grid-template-rows: 100px 1fr 150px;
+    grid-template-rows: 100px 1fr 100px;
     grid-template-columns: repeat(5, 1fr);
     height: 100vh;
 }
 
 .header{
     grid-column: 1/6;
-    background-color: aqua;
+  
 }
 .principal{
     grid-column: 1/6;
-    background-color: red;
+  
     
 }
 
 .footer{
     grid-column: 1/6;
-    background-color: bisque;
+    
 }

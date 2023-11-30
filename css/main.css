@@ -4,24 +4,21 @@
 }
 .gridPage {
   display: grid;
-  grid-template-rows: 100px 1fr 150px;
+  grid-template-rows: 100px 1fr 100px;
   grid-template-columns: repeat(5, 1fr);
   height: 100vh;
 }
 
 .header {
   grid-column: 1/6;
-  background-color: aqua;
 }
 
 .principal {
   grid-column: 1/6;
-  background-color: red;
 }
 
 .footer {
   grid-column: 1/6;
-  background-color: bisque;
 }
 
 * {
@@ -35,6 +32,7 @@
 
 .navbar {
   min-height: 100px;
+  box-shadow: 0px 0px 2px black;
 }
 .navbar .navbar-brand {
   letter-spacing: 2px;
@@ -61,4 +59,75 @@
 }
 .navbar .navbar-nav li a {
   color: rgb(12, 156, 156) !important;
+}
+
+.principal {
+  padding-top: 15px;
+  margin-top: 10px;
+}
+.principal .asistenciaLegal {
+  height: 500px;
+  background: url("../img/img_AsesoriaLegal.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 120px;
+}
+.principal .asistenciaLegal__titulo {
+  display: block;
+  height: 180px;
+  background-color: rgba(12, 156, 156, 0.4784313725);
+  line-height: 180px;
+  text-align: center;
+}
+.principal .nuestrosServicios__subtitulo {
+  background: #0c9c9c;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.principal .nuestrosServicios__grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+  gap: 20px;
+  padding: 0px 40px;
+  justify-content: center;
+  align-items: center;
+}
+.principal .nuestrosServicios .nuestrosServicios__card {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+  background-color: aqua;
+}
+.principal .nuestrosServicios .nuestrosServicios__card .card__img {
+  width: 100%;
+  overflow: hidden;
+  max-height: 300px;
+}
+.principal .nuestrosServicios .nuestrosServicios__card .card__img img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+.principal .nuestrosServicios .nuestrosServicios__card .card__title h3 {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.footer__flex {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid black;
 }/*# sourceMappingURL=main.css.map */

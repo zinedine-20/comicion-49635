@@ -1,0 +1,81 @@
+.principal{
+    padding-top: 15px;
+    margin-top: 10px;
+
+    .asistenciaLegal{
+        height: 500px;
+        background: url("../img/img_AsesoriaLegal.avif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 120px;
+        
+        &__titulo{
+           display: block;
+           height: 180px;
+           background-color: #0c9c9c7a;
+           line-height: 180px;        
+           text-align: center;
+        }
+    }
+
+    .nuestrosServicios{
+        
+        
+        
+        &__subtitulo{
+            background: #0c9c9c;
+            text-align: center;
+            height: 80px;
+            line-height: 80px;
+            color: rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+        }
+
+        &__grid{
+             display: grid;
+             grid-auto-rows: auto;
+             grid-template-columns: repeat(auto-fill, minmax(min(100%,400px), 1fr));
+             gap: 20px;
+             padding: 0px 40px;
+            justify-content: center;
+            align-items: center;
+             
+            }
+            .nuestrosServicios__card{
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0px 0px 10px black;
+                background-color: aqua;
+               .card__img{
+                width: 100%;
+                overflow: hidden;
+                max-height: 300px;
+                img{
+                height: 200px;
+                 object-fit: cover;
+                 width: 100%;
+                }
+               } 
+              .card__title{
+                h3{
+                    font-size: 12px;
+                    
+                    padding-top: 10px;
+                }
+              } 
+            }
+
+            
+        }
+
+    }
+
+
+
