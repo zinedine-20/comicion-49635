@@ -1,0 +1,125 @@
+  
+
+.nosotrosMain {
+    display: grid;
+    grid-template-rows: 320px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px),0.3fr));
+    justify-content: center;
+    padding: 20px;
+    column-gap: 20px;
+    
+    &__contenedor{
+        display: flex;
+        flex-flow: column;
+        justify-content: stretch;
+        align-items: center;
+        .nosotrosMain__title{
+            color: #0C9C9C;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+
+    &__img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-height:300px ;
+        overflow: hidden;
+       img {
+        max-width:100% ;
+        max-height: 100%;
+        object-fit: cover;
+        
+        }
+    }
+    
+
+    }
+    .nosotros__subtitle{
+        color: white;
+      background-color: #0c9c9c;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+    }
+        p{
+            text-align: justify;
+        }
+    .NosotrosCulturaOrganizacional{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fit,minmax(min(100%,380px),1fr));
+        padding: 20px;
+        column-gap: 10px;
+        &__vision, &__mision, &__valores{
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            align-items: center;
+            box-shadow: 0px 0px 4px black;
+            overflow: hidden;
+            border-radius: 5px;
+           
+        }
+        &__vision h3, &__mision h3, &__valores h3{
+            color: white;
+            width: 100%;
+            background-color: #0C9C9C;
+            text-align: center;
+            text-shadow: 0px 0px 4px black;
+        }
+        &__vision img, &__mision img, &__valores img{
+            max-width:100% ;
+            min-height:300px;
+            max-height: 300px;
+            object-fit: cover;
+            
+        }
+        &__vision p, &__mision p, &__valores p{
+            padding: 0 10px;
+        }
+    }
+    .equipo{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%,400px),0.1fr));
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 10px;
+        
+        &__title{
+            color: white;
+            background-color: #0c9c9c;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+        }
+        &__container{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 4px black ;
+            border-radius: 20px;
+            &--img{
+                img{
+                    max-width:100% ;
+                    min-height:300px;
+                    max-height: 300px;
+                    object-fit: cover;
+                    
+                }
+            }
+            p{
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                text-shadow: 1px 1px 5px rgb(2, 82, 156);
+                font-size: 20px;
+                padding: 5px;
+            }
+        }
+    }
+    
