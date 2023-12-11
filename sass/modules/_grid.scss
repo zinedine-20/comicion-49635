@@ -1,22 +1,24 @@
 .gridPage{
     display: grid;
     grid-template-rows: 100px 1fr 100px;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     height: 100vh;
-   
+    grid-template-areas: "header header header" 
+                         "principal principal principal"
+                         "footer footer footer";
 }
 
 .header{
-    grid-column: 1/5;
+   grid-area: header;
   
 }
 .principal{
-    grid-column: 1/5;
+    grid-area:principal;
   
     
 }
 
 .footer{
-    grid-column: 1/5;
-    
+   
+    grid-area: footer;
 }
