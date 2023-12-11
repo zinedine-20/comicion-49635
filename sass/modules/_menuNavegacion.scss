@@ -37,10 +37,15 @@
     }
     .navbar-nav {
       li {
+        transition: 300ms;
         a {
           color: rgb(12, 156, 156) !important;
         }
-      }
+           }
+           li:hover{
+          border-bottom: 3px solid rgb(12, 156, 156);
+           }
     }
+
  
 }
