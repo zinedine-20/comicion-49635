@@ -73,6 +73,7 @@
 
   .estadisticas {
     padding-top: 20px;
+    
     &__subtitle {
       color: white;
       background-color: #0c9c9c;
@@ -84,10 +85,12 @@
     &__grid {
       display: grid;
       grid-template-rows: auto;
-      grid-template-columns: repeat(auto-fit, minmax(600px, 0.1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%,600px), 0.1fr));
       align-items: center;
       justify-content: center;
       gap: 15px;
+      padding: 10px;
+      
       .contenedor {
         img {
           width: 100%;
@@ -111,6 +114,7 @@
       flex-flow: column;
       justify-content: center;
       align-items: center;
+      padding: 10px;
 
       .contenedor {
         box-shadow: 0px 0px 10px black;

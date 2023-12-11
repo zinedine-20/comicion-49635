@@ -5,26 +5,27 @@
 .gridPage {
   display: grid;
   grid-template-rows: 100px 1fr 100px;
-  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "principal principal principal" "footer footer footer";
   height: 100vh;
 }
 
 .header {
-  grid-column: 1/5;
+  grid-area: header;
 }
 
 .principal {
-  grid-column: 1/5;
+  grid-area: principal;
 }
 
 .footer {
-  grid-column: 1/5;
+  grid-area: footer;
 }
 
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: 0px;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   font-family: roboto;
@@ -140,10 +141,11 @@
 .principal .estadisticas__grid {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 0.1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 600px), 0.1fr));
   align-items: center;
   justify-content: center;
   gap: 15px;
+  padding: 10px;
 }
 .principal .estadisticas__grid .contenedor img {
   width: 100%;
@@ -164,6 +166,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .principal .nosotros__flex .contenedor {
   box-shadow: 0px 0px 10px black;
@@ -385,8 +388,7 @@ p {
   flex-flow: column;
   align-items: stretch;
   justify-content: center;
-  max-width: 800px;
-  min-width: 800px;
+  width: 100%;
   row-gap: 20px;
   box-shadow: 0px 0px 6px black;
   padding: 40px;
@@ -416,8 +418,10 @@ p {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 .blogNoticias__title {
+  padding-top: 40px;
   color: #0c9c9c;
 }
 .blogNoticias__container {
@@ -425,18 +429,17 @@ p {
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
-  max-width: 1000px;
   gap: 20px;
   margin: 10px;
 }
 .blogNoticias__container--img {
   display: block;
   overflow: hidden;
+  max-width: 400px;
 }
 .blogNoticias__container--img img {
   display: block;
-  max-width: 400px;
-  max-height: 300px;
+  width: 100%;
   object-fit: cover;
 }
 .blogNoticias__container p {
@@ -453,4 +456,6 @@ p {
   align-items: center;
   margin-top: 20px;
   border-top: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
 }/*# sourceMappingURL=main.css.map */
