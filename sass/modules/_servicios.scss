@@ -16,7 +16,7 @@
         text-align: justify;
         padding: 0px 15px;
         font-weight: normal;
-        font-size: 1rem;
+        font-size: map-get($tamaño-fuentes, normal );
        
       }
     }

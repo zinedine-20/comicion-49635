@@ -26,7 +26,7 @@
   .nuestrosServicios {
     
     &__subtitulo {
-      background: #0c9c9c;
+      background: $colorPrincipal;
       text-align: center;
       height: 80px;
       line-height: 80px;
@@ -44,14 +44,11 @@
       align-items: center;
     }
     .nuestrosServicios__card {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
+     @include flex (column,wrap);
 
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0px 0px 10px black;
+      box-shadow: $sombras;
       background-color: rgb(5, 136, 136);
       .card__img {
         width: 100%;
@@ -65,7 +62,7 @@
       }
       .card__title {
         h3 {
-          font-size: 12px;
+          font-size: map-get($tamaño-fuentes, pequeño );
           font-weight: bold;
           padding-top: 10px;
           color: white;
@@ -79,7 +76,7 @@
     
     &__subtitle {
       color: white;
-      background-color: #0c9c9c;
+      background-color: $colorPrincipal;
       height: 80px;
       line-height: 80px;
     }
@@ -107,7 +104,7 @@
     padding-top: 15px;
     &__title {
       color: white;
-      background-color: #0c9c9c;
+      background-color: $colorPrincipal;
       height: 80px;
       line-height: 80px;
       text-align: center;
@@ -120,7 +117,7 @@
       padding: 10px;
 
       .contenedor {
-        box-shadow: 0px 0px 10px black;
+        box-shadow: $sombras;
 
         .nosotros__img {
           max-width: 500px;
@@ -130,12 +127,9 @@
           }
         }
         .nosotros__text {
-          display: flex;
-          justify-content: center;
-          flex-flow: column;
-          align-items: center;
+         @include flex (column,nowrap);
           a {
-            background-color: #0c9c9c;
+            background-color: $colorPrincipal;
             width: 100%;
             text-align: center;
             color: white;
