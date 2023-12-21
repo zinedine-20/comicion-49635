@@ -344,7 +344,6 @@ p {
 .principal .serviciosMain__subtitle {
   text-align: center;
   color: #0F9D9D;
-  text-shadow: 1px 1px 2px black;
 }
 .principal .services__cards {
   display: flex;
@@ -388,7 +387,7 @@ p {
 }
 
 .contactoMain {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .contactoMain__title {
   color: #0c9c9c;
